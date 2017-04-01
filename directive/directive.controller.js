@@ -102,6 +102,11 @@ dir.directive("moviesList",function($window){
           scope.start = 0;
           //  console.log(newVal);
         });
+        scope.startsWith = function (actual, expected) {
+          var lowerStr = (actual + "").toLowerCase();
+          return lowerStr.indexOf(expected.toLowerCase()) === 0;
+        };
+
         scope.next = function(){
           scope.start = scope.start + scope.results_per_page;
           if(scope.start>scope.filtered.length)
