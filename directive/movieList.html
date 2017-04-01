@@ -1,0 +1,66 @@
+
+<div class="listOfMovies" >
+  <div class="Container"
+  ng-repeat = "x in filtered = (List | filter: {title:selected.item})| orderBy:selected.sort:selected.dir | startFrom: start | limitTo:10 ">
+
+    <div class="Line1">
+      <div class="Logo">
+        <img src="images/game-logo.png" alt="" height = "100%" width="100%">
+      </div>
+      <div class="Details">
+        <div class="detailsLine1">
+          <table>
+            <tr>
+              <td class="Tittle" title="Game Title: {{x.title}}!">{{x.title}}</td>
+            </tr>
+            <tr>
+              <td class="platform" title="Pleadge: {{x.amt_pledged}}">Pleadge: {{x.amt_pledged}}</td>
+            </tr>
+            <tr>
+              <td class="platform" title="Backers: {{x.num_backers}}">Backers: {{x.num_backers}}</td>
+            </tr>
+            <tr>
+              <td class="platform" title="By: {{x.by}}">By: {{x.by}}</td>
+            </tr>
+          </table>
+          <i class="glyphicon glyphicon-chevron-right load_page" ng-click = "open_page(x.url)"></i>
+          <!-- <span class="movieTittle">{{x.movie_title}}({{x.title_year}})</span> -->
+          <!-- <span class="movieCountry" style="width:100px">Country: {{x.country}}</span> -->
+        </div>
+        <!-- <div class="detailsLine2">
+          <table>
+            <tr>
+              <td class="table-heading">Language</td>
+              <td>: {{x.language}}</td>
+            </tr>
+            <tr>
+              <td class="table-heading">Director</td>
+              <td>: {{x.director_name}}</td>
+            </tr>
+            <tr>
+              <td class="table-heading">Actors</td>
+              <td>: {{x.actor_1_name}}, {{x.actor_2_name}}</td>
+            </tr>
+          </table>
+        </div> -->
+      </div>
+    </div>
+    <div class="Line2">
+      <span class="score" title="S No : {{x.s_no}}"><b>{{x.s_no}}</b></span>
+      <span class="genre" title="End Date: {{x.end_time}}">End Date: {{x.end_time | date:'dd MMM yyyy'}}  </span>
+    </div>
+  </div>
+  <div class="endofresult col-lg-12 col-sm-12" ng-show = "filtered.length<start+results_per_page && filtered.length!=0">
+    <center><h4 >-----End of Result-----</h4></center>
+  </div>
+  <div class="noresult col-lg-12 col-sm-12" ng-show = "filtered.length == 0">
+    <center>
+      <img src="images/noresultfound.png" alt="">
+      <h1>No result Found</h1>
+    </center>
+  </div>
+  <div class="navigation" style = "width:100%">
+    <input type="button" class = "mybtn" name="" value="Pre" ng-click = "pre()" ng-show = "start/results_per_page">
+    <input type="button" class = "mybtn" name="" value="Next" ng-click = "next()" ng-if = "filtered.length>start+results_per_page">
+  </div>
+</div>

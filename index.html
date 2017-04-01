@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gieom test</title>
+  </head>
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+  <link rel="stylesheet" href="index.css">
+
+  <body ng-app="myApp">
+  <div class="company-heading"  >
+    <img class = "company-logo" src="images/logo.png" alt=""/>
+    <label class="company-name">Projects Arena</label>
+  </div>
+
+  <div class="results">
+    <div class="" ng-controller = "autoCompleteCtrl" style="width:100%">
+      <div class="sb">
+        <global-search-dir obj = "obj" optselected = "optselected" orderby = "orderby_arr"></global-search-dir>
+      </div>
+      <div><movies-list selected = "optselected" list = "obj" ></movies-list></div>
+    </div>
+  </div>
+  </body>
+
+  <script src="Angular/angular.js" charset="utf-8"></script>
+  <script src="Angular/angular-ui-router.js" charset="utf-8"></script>
+  <script src="Angular/jquery.js" charset="utf-8"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+
+  <script src="directive/directive.controller.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+</html>

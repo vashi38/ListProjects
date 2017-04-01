@@ -1,0 +1,88 @@
+<div class="flex" >
+  <div class="col-lg-6 col-sm-6">
+    <div class="input-group input-group-lg col-lg-12 col-sm-12">
+      <span class="input-group-addon" id="globalSearchicon">
+        <i class="glyphicon glyphicon-search"></i>
+      </span>
+      <input id = "GlobalSearch" class="form-control" type="text" name="globalSearch"
+        value="" placeholder="Search by Name"
+        aria-discribedby="globalSearchicon" ng-model = "globalSearch"
+         ng-blur = "focus_lost()" ng-keyup = "update_temp($event)">
+      <span>
+        <i class="glyphicon glyphicon-remove-circle searchClear"
+          ng-click = "globalSearch = ''" ng-show = "globalSearch!= ''">
+        </i>
+      </span>
+    </div>
+    <span class = "col-lg-12 " style = "padding:0px;"
+      ng-show = "globalSearch!= '' && !selected ">
+      <div class="autoCompleteContainer col-lg-12">
+        <ul>
+          <li ng-class = "{'active':pointer == $index}"
+          ng-repeat = "option in filtered = (options | filter:{title:temp}:startsWith)"
+          ng-click="selectOption(option.title)">
+            {{option.title}}<span class="genres">{{option.country}}: {{option.state}}</span>
+          </li>
+        </ul>
+      </div>
+    </span>
+  </div>
+  <div class="">
+    <i class="glyphicon glyphicon-filter large" ng-click = "filter_view = !filter_view"></i>
+    <div class="filter" ng-show = "filter_view">
+      <i class="glyphicon glyphicon-remove-circle filter_clear" ng-click = "filter_view = !filter_view"></i>
+      <table>
+        <tr>
+          <td><label>Sort By:</label></td>
+          <td>
+            <label ng-click = "filterFun()" ng-repeat = "orderby in orderby_arr">
+              <input id = "{{orderby.actual_name}}" type="radio" name="by"
+               ng-value="orderby.actual_name" ng-model = "filterObj.by" >
+              <label for = "{{orderby.actual_name}}" class="sortby">
+                {{orderby.display_name}}
+              </label >
+              <br>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td><label >Direction:</label></td>
+          <td><label ng-click = "filterFun()">
+            <input id = "r3" type="radio" name="dir" value="0" ng-model = "filterObj.dir">
+            <label for = "r3"  class="sortby">Ascending</label>
+          </label>
+          <label ng-click = "filterFun()">
+            <input id = "r4" type="radio" name="dir" value="1" ng-model = "filterObj.dir">
+            <label for = "r4"  class="sortby">Decending</label>
+          </label></td>
+        </tr>
+      </table>
+      <!-- <label>Sort By:</label>
+      <label ng-click = "filterFun()" ng-repeat = "orderby in orderby_arr">
+        <input id = "{{orderby.actual_name}}" type="radio" name="by" ng-value="orderby.actual_name" ng-model = "filterObj.by" >
+        <label for = "{{orderby.actual_name}}" class="sortby">{{orderby.display_name}}</label >
+      </label> -->
+      <!-- <label ng-click = "filterFun()">
+        <input id = "r1" type="radio" name="by" value="movie_title" ng-model = "filterObj.by" >
+        <label for = "r1" class="sortby">Tittle</label >
+      </label>
+      <label ng-click = "filterFun()">
+        <input id = "r2" type="radio" name="by" value="genres" ng-model = "filterObj.by">
+        <label for = "r2"  class="sortby">Generes</label >
+      </label> -->
+      <!-- <br>
+      <label >Direction:</label>
+      <label ng-click = "filterFun()">
+        <input id = "r3" type="radio" name="dir" value="0" ng-model = "filterObj.dir">
+        <label for = "r3"  class="sortby">Ascending</label>
+      </label>
+      <label ng-click = "filterFun()">
+        <input id = "r4" type="radio" name="dir" value="1" ng-model = "filterObj.dir">
+        <label for = "r4"  class="sortby">Decending</label>
+      </label> -->
+      <input type="button" name="" value="Clear Filter" ng-click = "clear_filter()">
+    </div>
+
+  </div>
+
+</div>
