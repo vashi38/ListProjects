@@ -1,0 +1,1046 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0119)https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/b95de7f1daae47a9a7bb1b3bec3ed3eb/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="gr__hackerearth_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="description" content="HackerEarth Online Test">
+    <link rel="canonical" href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/">
+    <meta name="msvalidate.01" content="1BF418E510B5A17A2D71685C571BF4EB">
+
+    
+    <meta name="google-site-verification" content="ozqyeStBcz4eehbY9Ohb_IUQcA4y8BKzzDCT-H1QPPc">
+
+    <title>Problems - Gieom Frontend Hiring Challenge</title>
+
+    
+    <link rel="shortcut icon" type="image/x-icon" href="https://hackerearth.global.ssl.fastly.net/static/hackerearth/images/logo/HE_identity.png">
+
+    
+    <link rel="stylesheet" href="./Gieom Frontend Hiring_files/base_common_combined.css">
+    <link rel="stylesheet" href="./Gieom Frontend Hiring_files/tipTip.css">
+    <link rel="stylesheet" href="./Gieom Frontend Hiring_files/offline-theme-slide.css">
+    <link rel="stylesheet" href="./Gieom Frontend Hiring_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./Gieom Frontend Hiring_files/opensans.css" type="text/css">
+    <link rel="stylesheet" href="./Gieom Frontend Hiring_files/base_candidate.0.1.css">
+
+    
+    
+<link rel="stylesheet" href="./Gieom Frontend Hiring_files/editor1.css">
+<link rel="stylesheet" href="./Gieom Frontend Hiring_files/bluebook.css">
+<link rel="stylesheet" href="./Gieom Frontend Hiring_files/problems_new.css">
+
+<link href="./Gieom Frontend Hiring_files/jquery-ui-1.8.21.custom.css" media="screen" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./Gieom Frontend Hiring_files/pagedown.css">
+<link href="./Gieom Frontend Hiring_files/prettify.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="./Gieom Frontend Hiring_files/custom-jquery.joyride-2.1.css">
+<link rel="stylesheet" href="./Gieom Frontend Hiring_files/pace.css">
+
+
+
+
+
+  <style type="text/css" media="screen">.uv-icon{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;display:inline-block;cursor:pointer;position:relative;-moz-transition:all 300ms;-o-transition:all 300ms;-webkit-transition:all 300ms;transition:all 300ms;width:39px;height:39px;position:fixed;z-index:100002;opacity:0.8;-moz-transition:opacity 100ms;-o-transition:opacity 100ms;-webkit-transition:opacity 100ms;transition:opacity 100ms}.uv-icon.uv-bottom-right{bottom:10px;right:12px}.uv-icon.uv-top-right{top:10px;right:12px}.uv-icon.uv-bottom-left{bottom:10px;left:12px}.uv-icon.uv-top-left{top:10px;left:12px}.uv-icon.uv-is-selected{opacity:1}.uv-icon svg{width:39px;height:39px}.uv-popover{font-family:sans-serif;font-weight:100;font-size:13px;color:black;position:fixed;z-index:100001}.uv-popover-content{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;background:white;position:relative;width:325px;height:325px;-moz-transition:background 200ms;-o-transition:background 200ms;-webkit-transition:background 200ms;transition:background 200ms}.uv-bottom .uv-popover-content{-moz-box-shadow:rgba(0,0,0,0.3) 0 -10px 60px,rgba(0,0,0,0.1) 0 0 20px;-webkit-box-shadow:rgba(0,0,0,0.3) 0 -10px 60px,rgba(0,0,0,0.1) 0 0 20px;box-shadow:rgba(0,0,0,0.3) 0 -10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-top .uv-popover-content{-moz-box-shadow:rgba(0,0,0,0.3) 0 10px 60px,rgba(0,0,0,0.1) 0 0 20px;-webkit-box-shadow:rgba(0,0,0,0.3) 0 10px 60px,rgba(0,0,0,0.1) 0 0 20px;box-shadow:rgba(0,0,0,0.3) 0 10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-left .uv-popover-content{-moz-box-shadow:rgba(0,0,0,0.3) 10px 0 60px,rgba(0,0,0,0.1) 0 0 20px;-webkit-box-shadow:rgba(0,0,0,0.3) 10px 0 60px,rgba(0,0,0,0.1) 0 0 20px;box-shadow:rgba(0,0,0,0.3) 10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-right .uv-popover-content{-moz-box-shadow:rgba(0,0,0,0.3) -10px 0 60px,rgba(0,0,0,0.1) 0 0 20px;-webkit-box-shadow:rgba(0,0,0,0.3) -10px 0 60px,rgba(0,0,0,0.1) 0 0 20px;box-shadow:rgba(0,0,0,0.3) -10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-ie8 .uv-popover-content{position:relative}.uv-ie8 .uv-popover-content .uv-popover-content-shadow{display:block;background:black;content:'';position:absolute;left:-15px;top:-15px;width:100%;height:100%;filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=15,MakeShadow=true,ShadowOpacity=0.30);z-index:-1}.uv-popover-tail{border:9px solid transparent;width:0;z-index:10;position:absolute;-moz-transition:border-top-color 200ms;-o-transition:border-top-color 200ms;-webkit-transition:border-top-color 200ms;transition:border-top-color 200ms}.uv-top .uv-popover-tail{bottom:-20px;border-top:11px solid white}.uv-bottom .uv-popover-tail{top:-20px;border-bottom:11px solid white}.uv-left .uv-popover-tail{right:-20px;border-left:11px solid white}.uv-right .uv-popover-tail{left:-20px;border-right:11px solid white}.uv-popover-loading{background:white;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;position:absolute;width:100%;height:100%;left:0;top:0}.uv-popover-loading-text{position:absolute;top:50%;margin-top:-0.5em;width:100%;text-align:center}.uv-popover-iframe-container{height:100%}.uv-popover-iframe{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;overflow:hidden}.uv-is-hidden{display:none}.uv-is-invisible{display:block !important;visibility:hidden !important}.uv-is-transitioning{display:block !important}.uv-no-transition{-moz-transition:none !important;-webkit-transition:none !important;-o-transition:color 0 ease-in !important;transition:none !important}.uv-fade{opacity:1;-moz-transition:opacity 200ms ease-out;-o-transition:opacity 200ms ease-out;-webkit-transition:opacity 200ms ease-out;transition:opacity 200ms ease-out}.uv-fade.uv-is-hidden{opacity:0}.uv-scale-top,.uv-scale-top-left,.uv-scale-top-right,.uv-scale-bottom,.uv-scale-bottom-left,.uv-scale-bottom-right,.uv-scale-right,.uv-scale-right-top,.uv-scale-right-bottom,.uv-scale-left,.uv-scale-left-top,.uv-scale-left-bottom,.uv-slide-top,.uv-slide-bottom,.uv-slide-left,.uv-slide-right{opacity:1;-moz-transition:all 80ms ease-out;-o-transition:all 80ms ease-out;-webkit-transition:all 80ms ease-out;transition:all 80ms ease-out}.uv-scale-top.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateY(-15%);-ms-transform:scale(0.8) translateY(-15%);-webkit-transform:scale(0.8) translateY(-15%);transform:scale(0.8) translateY(-15%)}.uv-scale-top-left.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateY(-15%) translateX(-10%);-ms-transform:scale(0.8) translateY(-15%) translateX(-10%);-webkit-transform:scale(0.8) translateY(-15%) translateX(-10%);transform:scale(0.8) translateY(-15%) translateX(-10%)}.uv-scale-top-right.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateY(-15%) translateX(10%);-ms-transform:scale(0.8) translateY(-15%) translateX(10%);-webkit-transform:scale(0.8) translateY(-15%) translateX(10%);transform:scale(0.8) translateY(-15%) translateX(10%)}.uv-scale-bottom.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateY(15%);-ms-transform:scale(0.8) translateY(15%);-webkit-transform:scale(0.8) translateY(15%);transform:scale(0.8) translateY(15%)}.uv-scale-bottom-left.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateY(15%) translateX(-10%);-ms-transform:scale(0.8) translateY(15%) translateX(-10%);-webkit-transform:scale(0.8) translateY(15%) translateX(-10%);transform:scale(0.8) translateY(15%) translateX(-10%)}.uv-scale-bottom-right.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateY(15%) translateX(10%);-ms-transform:scale(0.8) translateY(15%) translateX(10%);-webkit-transform:scale(0.8) translateY(15%) translateX(10%);transform:scale(0.8) translateY(15%) translateX(10%)}.uv-scale-right.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateX(15%);-ms-transform:scale(0.8) translateX(15%);-webkit-transform:scale(0.8) translateX(15%);transform:scale(0.8) translateX(15%)}.uv-scale-right-top.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateX(15%) translateY(-10%);-ms-transform:scale(0.8) translateX(15%) translateY(-10%);-webkit-transform:scale(0.8) translateX(15%) translateY(-10%);transform:scale(0.8) translateX(15%) translateY(-10%)}.uv-scale-right-bottom.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateX(15%) translateY(10%);-ms-transform:scale(0.8) translateX(15%) translateY(10%);-webkit-transform:scale(0.8) translateX(15%) translateY(10%);transform:scale(0.8) translateX(15%) translateY(10%)}.uv-scale-left.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateX(-15%);-ms-transform:scale(0.8) translateX(-15%);-webkit-transform:scale(0.8) translateX(-15%);transform:scale(0.8) translateX(-15%)}.uv-scale-left-top.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateX(-15%) translateY(-10%);-ms-transform:scale(0.8) translateX(-15%) translateY(-10%);-webkit-transform:scale(0.8) translateX(-15%) translateY(-10%);transform:scale(0.8) translateX(-15%) translateY(-10%)}.uv-scale-left-bottom.uv-is-hidden{opacity:0;-moz-transform:scale(0.8) translateX(-15%) translateY(10%);-ms-transform:scale(0.8) translateX(-15%) translateY(10%);-webkit-transform:scale(0.8) translateX(-15%) translateY(10%);transform:scale(0.8) translateX(-15%) translateY(10%)}.uv-slide-top.uv-is-hidden{-moz-transform:translateY(-100%);-ms-transform:translateY(-100%);-webkit-transform:translateY(-100%);transform:translateY(-100%)}.uv-slide-bottom.uv-is-hidden{-moz-transform:translateY(100%);-ms-transform:translateY(100%);-webkit-transform:translateY(100%);transform:translateY(100%)}.uv-slide-left.uv-is-hidden{-moz-transform:translateX(-100%);-ms-transform:translateX(-100%);-webkit-transform:translateX(-100%);transform:translateX(-100%)}.uv-slide-right.uv-is-hidden{-moz-transform:translateX(100%);-ms-transform:translateX(100%);-webkit-transform:translateX(100%);transform:translateX(100%)}
+</style><style type="text/css" media="screen">.uv-icon:hover{opacity:1}</style><style type="text/css" media="print">#uvTab,.uv-tray,.uv-icon,.uv-popover,.uv-bubble{display:none!important}</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style id="ace_editor.css">.ace_editor {	position: relative;	overflow: hidden;	font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;	direction: ltr;	}	.ace_scroller {	position: absolute;	overflow: hidden;	top: 0;	bottom: 0;	background-color: inherit;	-ms-user-select: none;	-moz-user-select: none;	-webkit-user-select: none;	user-select: none;	cursor: text;	}	.ace_content {	position: absolute;	-moz-box-sizing: border-box;	-webkit-box-sizing: border-box;	box-sizing: border-box;	min-width: 100%;	}	.ace_dragging .ace_scroller:before{	position: absolute;	top: 0;	left: 0;	right: 0;	bottom: 0;	content: '';	background: rgba(250, 250, 250, 0.01);	z-index: 1000;	}	.ace_dragging.ace_dark .ace_scroller:before{	background: rgba(0, 0, 0, 0.01);	}	.ace_selecting, .ace_selecting * {	cursor: text !important;	}	.ace_gutter {	position: absolute;	overflow : hidden;	width: auto;	top: 0;	bottom: 0;	left: 0;	cursor: default;	z-index: 4;	-ms-user-select: none;	-moz-user-select: none;	-webkit-user-select: none;	user-select: none;	}	.ace_gutter-active-line {	position: absolute;	left: 0;	right: 0;	}	.ace_scroller.ace_scroll-left {	box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;	}	.ace_gutter-cell {	padding-left: 19px;	padding-right: 6px;	background-repeat: no-repeat;	}	.ace_gutter-cell.ace_error {	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");	background-repeat: no-repeat;	background-position: 2px center;	}	.ace_gutter-cell.ace_warning {	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");	background-position: 2px center;	}	.ace_gutter-cell.ace_info {	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");	background-position: 2px center;	}	.ace_dark .ace_gutter-cell.ace_info {	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");	}	.ace_scrollbar {	position: absolute;	right: 0;	bottom: 0;	z-index: 6;	}	.ace_scrollbar-inner {	position: absolute;	cursor: text;	left: 0;	top: 0;	}	.ace_scrollbar-v{	overflow-x: hidden;	overflow-y: scroll;	top: 0;	}	.ace_scrollbar-h {	overflow-x: scroll;	overflow-y: hidden;	left: 0;	}	.ace_print-margin {	position: absolute;	height: 100%;	}	.ace_text-input {	position: absolute;	z-index: 0;	width: 0.5em;	height: 1em;	opacity: 0;	background: transparent;	-moz-appearance: none;	appearance: none;	border: none;	resize: none;	outline: none;	overflow: hidden;	font: inherit;	padding: 0 1px;	margin: 0 -1px;	text-indent: -1em;	-ms-user-select: text;	-moz-user-select: text;	-webkit-user-select: text;	user-select: text;	white-space: pre!important;	}	.ace_text-input.ace_composition {	background: inherit;	color: inherit;	z-index: 1000;	opacity: 1;	text-indent: 0;	}	.ace_layer {	z-index: 1;	position: absolute;	overflow: hidden;	word-wrap: normal;	white-space: pre;	height: 100%;	width: 100%;	-moz-box-sizing: border-box;	-webkit-box-sizing: border-box;	box-sizing: border-box;	pointer-events: none;	}	.ace_gutter-layer {	position: relative;	width: auto;	text-align: right;	pointer-events: auto;	}	.ace_text-layer {	font: inherit !important;	}	.ace_cjk {	display: inline-block;	text-align: center;	}	.ace_cursor-layer {	z-index: 4;	}	.ace_cursor {	z-index: 4;	position: absolute;	-moz-box-sizing: border-box;	-webkit-box-sizing: border-box;	box-sizing: border-box;	border-left: 2px solid;	transform: translatez(0);	}	.ace_slim-cursors .ace_cursor {	border-left-width: 1px;	}	.ace_overwrite-cursors .ace_cursor {	border-left-width: 0;	border-bottom: 1px solid;	}	.ace_hidden-cursors .ace_cursor {	opacity: 0.2;	}	.ace_smooth-blinking .ace_cursor {	-webkit-transition: opacity 0.18s;	transition: opacity 0.18s;	}	.ace_editor.ace_multiselect .ace_cursor {	border-left-width: 1px;	}	.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {	position: absolute;	z-index: 3;	}	.ace_marker-layer .ace_selection {	position: absolute;	z-index: 5;	}	.ace_marker-layer .ace_bracket {	position: absolute;	z-index: 6;	}	.ace_marker-layer .ace_active-line {	position: absolute;	z-index: 2;	}	.ace_marker-layer .ace_selected-word {	position: absolute;	z-index: 4;	-moz-box-sizing: border-box;	-webkit-box-sizing: border-box;	box-sizing: border-box;	}	.ace_line .ace_fold {	-moz-box-sizing: border-box;	-webkit-box-sizing: border-box;	box-sizing: border-box;	display: inline-block;	height: 11px;	margin-top: -2px;	vertical-align: middle;	background-image:	url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),	url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");	background-repeat: no-repeat, repeat-x;	background-position: center center, top left;	color: transparent;	border: 1px solid black;	border-radius: 2px;	cursor: pointer;	pointer-events: auto;	}	.ace_dark .ace_fold {	}	.ace_fold:hover{	background-image:	url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),	url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");	}	.ace_tooltip {	background-color: #FFF;	background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));	background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));	border: 1px solid gray;	border-radius: 1px;	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);	color: black;	max-width: 100%;	padding: 3px 4px;	position: fixed;	z-index: 999999;	-moz-box-sizing: border-box;	-webkit-box-sizing: border-box;	box-sizing: border-box;	cursor: default;	white-space: pre;	word-wrap: break-word;	line-height: normal;	font-style: normal;	font-weight: normal;	letter-spacing: normal;	pointer-events: none;	}	.ace_folding-enabled > .ace_gutter-cell {	padding-right: 13px;	}	.ace_fold-widget {	-moz-box-sizing: border-box;	-webkit-box-sizing: border-box;	box-sizing: border-box;	margin: 0 -12px 0 1px;	display: none;	width: 11px;	vertical-align: top;	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");	background-repeat: no-repeat;	background-position: center;	border-radius: 3px;	border: 1px solid transparent;	cursor: pointer;	}	.ace_folding-enabled .ace_fold-widget {	display: inline-block;   	}	.ace_fold-widget.ace_end {	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");	}	.ace_fold-widget.ace_closed {	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");	}	.ace_fold-widget:hover {	border: 1px solid rgba(0, 0, 0, 0.3);	background-color: rgba(255, 255, 255, 0.2);	box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);	}	.ace_fold-widget:active {	border: 1px solid rgba(0, 0, 0, 0.4);	background-color: rgba(0, 0, 0, 0.05);	box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);	}	.ace_dark .ace_fold-widget {	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");	}	.ace_dark .ace_fold-widget.ace_end {	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");	}	.ace_dark .ace_fold-widget.ace_closed {	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");	}	.ace_dark .ace_fold-widget:hover {	box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);	background-color: rgba(255, 255, 255, 0.1);	}	.ace_dark .ace_fold-widget:active {	box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);	}	.ace_fold-widget.ace_invalid {	background-color: #FFB4B4;	border-color: #DE5555;	}	.ace_fade-fold-widgets .ace_fold-widget {	-webkit-transition: opacity 0.4s ease 0.05s;	transition: opacity 0.4s ease 0.05s;	opacity: 0;	}	.ace_fade-fold-widgets:hover .ace_fold-widget {	-webkit-transition: opacity 0.05s ease 0.05s;	transition: opacity 0.05s ease 0.05s;	opacity:1;	}	.ace_underline {	text-decoration: underline;	}	.ace_bold {	font-weight: bold;	}	.ace_nobold .ace_bold {	font-weight: normal;	}	.ace_italic {	font-style: italic;	}	.ace_error-marker {	background-color: rgba(255, 0, 0,0.2);	position: absolute;	z-index: 9;	}	.ace_highlight-marker {	background-color: rgba(255, 255, 0,0.2);	position: absolute;	z-index: 8;	}	.ace_br1 {border-top-left-radius    : 3px;}	.ace_br2 {border-top-right-radius   : 3px;}	.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}	.ace_br4 {border-bottom-right-radius: 3px;}	.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}	.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}	.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}	.ace_br8 {border-bottom-left-radius : 3px;}	.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}	.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}	.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}	.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}	.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}	.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}	.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}	
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {	background: #f0f0f0;	color: #333;	}	.ace-tm .ace_print-margin {	width: 1px;	background: #e8e8e8;	}	.ace-tm .ace_fold {	background-color: #6B72E6;	}	.ace-tm {	background-color: #FFFFFF;	color: black;	}	.ace-tm .ace_cursor {	color: black;	}	.ace-tm .ace_invisible {	color: rgb(191, 191, 191);	}	.ace-tm .ace_storage,	.ace-tm .ace_keyword {	color: blue;	}	.ace-tm .ace_constant {	color: rgb(197, 6, 11);	}	.ace-tm .ace_constant.ace_buildin {	color: rgb(88, 72, 246);	}	.ace-tm .ace_constant.ace_language {	color: rgb(88, 92, 246);	}	.ace-tm .ace_constant.ace_library {	color: rgb(6, 150, 14);	}	.ace-tm .ace_invalid {	background-color: rgba(255, 0, 0, 0.1);	color: red;	}	.ace-tm .ace_support.ace_function {	color: rgb(60, 76, 114);	}	.ace-tm .ace_support.ace_constant {	color: rgb(6, 150, 14);	}	.ace-tm .ace_support.ace_type,	.ace-tm .ace_support.ace_class {	color: rgb(109, 121, 222);	}	.ace-tm .ace_keyword.ace_operator {	color: rgb(104, 118, 135);	}	.ace-tm .ace_string {	color: rgb(3, 106, 7);	}	.ace-tm .ace_comment {	color: rgb(76, 136, 107);	}	.ace-tm .ace_comment.ace_doc {	color: rgb(0, 102, 255);	}	.ace-tm .ace_comment.ace_doc.ace_tag {	color: rgb(128, 159, 191);	}	.ace-tm .ace_constant.ace_numeric {	color: rgb(0, 0, 205);	}	.ace-tm .ace_variable {	color: rgb(49, 132, 149);	}	.ace-tm .ace_xml-pe {	color: rgb(104, 104, 91);	}	.ace-tm .ace_entity.ace_name.ace_function {	color: #0000A2;	}	.ace-tm .ace_heading {	color: rgb(12, 7, 255);	}	.ace-tm .ace_list {	color:rgb(185, 6, 144);	}	.ace-tm .ace_meta.ace_tag {	color:rgb(0, 22, 142);	}	.ace-tm .ace_string.ace_regex {	color: rgb(255, 0, 0)	}	.ace-tm .ace_marker-layer .ace_selection {	background: rgb(181, 213, 255);	}	.ace-tm.ace_multiselect .ace_selection.ace_start {	box-shadow: 0 0 3px 0px white;	}	.ace-tm .ace_marker-layer .ace_step {	background: rgb(252, 255, 0);	}	.ace-tm .ace_marker-layer .ace_stack {	background: rgb(164, 229, 101);	}	.ace-tm .ace_marker-layer .ace_bracket {	margin: -1px 0 0 -1px;	border: 1px solid rgb(192, 192, 192);	}	.ace-tm .ace_marker-layer .ace_active-line {	background: rgba(0, 0, 0, 0.07);	}	.ace-tm .ace_gutter-active-line {	background-color : #dcdcdc;	}	.ace-tm .ace_marker-layer .ace_selected-word {	background: rgb(250, 250, 255);	border: 1px solid rgb(200, 200, 250);	}	.ace-tm .ace_indent-guide {	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;	}	
+/*# sourceURL=ace/css/ace-tm */</style><style>	    .error_widget_wrapper {	        background: inherit;	        color: inherit;	        border:none	    }	    .error_widget {	        border-top: solid 2px;	        border-bottom: solid 2px;	        margin: 5px 0;	        padding: 10px 40px;	        white-space: pre-wrap;	    }	    .error_widget.ace_error, .error_widget_arrow.ace_error{	        border-color: #ff5a5a	    }	    .error_widget.ace_warning, .error_widget_arrow.ace_warning{	        border-color: #F1D817	    }	    .error_widget.ace_info, .error_widget_arrow.ace_info{	        border-color: #5a5a5a	    }	    .error_widget.ace_ok, .error_widget_arrow.ace_ok{	        border-color: #5aaa5a	    }	    .error_widget_arrow {	        position: absolute;	        border: solid 5px;	        border-top-color: transparent!important;	        border-right-color: transparent!important;	        border-left-color: transparent!important;	        top: -5px;	    }	</style><style>	.ace_snippet-marker {	    -moz-box-sizing: border-box;	    box-sizing: border-box;	    background: rgba(194, 193, 208, 0.09);	    border: 1px dotted rgba(211, 208, 235, 0.62);	    position: absolute;	}</style><style>	.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {	    background-color: #CAD6FA;	    z-index: 1;	}	.ace_editor.ace_autocomplete .ace_line-hover {	    border: 1px solid #abbffe;	    margin-top: -1px;	    background: rgba(233,233,253,0.4);	}	.ace_editor.ace_autocomplete .ace_line-hover {	    position: absolute;	    z-index: 2;	}	.ace_editor.ace_autocomplete .ace_scroller {	   background: none;	   border: none;	   box-shadow: none;	}	.ace_rightAlignedText {	    color: gray;	    display: inline-block;	    position: absolute;	    right: 4px;	    text-align: right;	    z-index: -1;	}	.ace_editor.ace_autocomplete .ace_completion-highlight{	    color: #000;	    text-shadow: 0 0 0.01em;	}	.ace_editor.ace_autocomplete {	    width: 280px;	    z-index: 200000;	    background: #fbfbfb;	    color: #444;	    border: 1px lightgray solid;	    position: fixed;	    box-shadow: 2px 3px 5px rgba(0,0,0,.2);	    line-height: 1.4;	}</style><style id="ace_searchbox">	.ace_search {	background-color: #ddd;	border: 1px solid #cbcbcb;	border-top: 0 none;	max-width: 325px;	overflow: hidden;	margin: 0;	padding: 4px;	padding-right: 6px;	padding-bottom: 0;	position: absolute;	top: 0px;	z-index: 99;	white-space: normal;	}	.ace_search.left {	border-left: 0 none;	border-radius: 0px 0px 5px 0px;	left: 0;	}	.ace_search.right {	border-radius: 0px 0px 0px 5px;	border-right: 0 none;	right: 0;	}	.ace_search_form, .ace_replace_form {	border-radius: 3px;	border: 1px solid #cbcbcb;	float: left;	margin-bottom: 4px;	overflow: hidden;	}	.ace_search_form.ace_nomatch {	outline: 1px solid red;	}	.ace_search_field {	background-color: white;	border-right: 1px solid #cbcbcb;	border: 0 none;	-webkit-box-sizing: border-box;	-moz-box-sizing: border-box;	box-sizing: border-box;	float: left;	height: 22px;	outline: 0;	padding: 0 7px;	width: 214px;	margin: 0;	}	.ace_searchbtn,	.ace_replacebtn {	background: #fff;	border: 0 none;	border-left: 1px solid #dcdcdc;	cursor: pointer;	float: left;	height: 22px;	margin: 0;	position: relative;	}	.ace_searchbtn:last-child,	.ace_replacebtn:last-child {	border-top-right-radius: 3px;	border-bottom-right-radius: 3px;	}	.ace_searchbtn:disabled {	background: none;	cursor: default;	}	.ace_searchbtn {	background-position: 50% 50%;	background-repeat: no-repeat;	width: 27px;	}	.ace_searchbtn.prev {	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADFJREFUeNpiSU1NZUAC/6E0I0yACYskCpsJiySKIiY0SUZk40FyTEgCjGgKwTRAgAEAQJUIPCE+qfkAAAAASUVORK5CYII=);    	}	.ace_searchbtn.next {	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADRJREFUeNpiTE1NZQCC/0DMyIAKwGJMUAYDEo3M/s+EpvM/mkKwCQxYjIeLMaELoLMBAgwAU7UJObTKsvAAAAAASUVORK5CYII=);    	}	.ace_searchbtn_close {	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAcCAYAAABRVo5BAAAAZ0lEQVR42u2SUQrAMAhDvazn8OjZBilCkYVVxiis8H4CT0VrAJb4WHT3C5xU2a2IQZXJjiQIRMdkEoJ5Q2yMqpfDIo+XY4k6h+YXOyKqTIj5REaxloNAd0xiKmAtsTHqW8sR2W5f7gCu5nWFUpVjZwAAAABJRU5ErkJggg==) no-repeat 50% 0;	border-radius: 50%;	border: 0 none;	color: #656565;	cursor: pointer;	float: right;	font: 16px/16px Arial;	height: 14px;	margin: 5px 1px 9px 5px;	padding: 0;	text-align: center;	width: 14px;	}	.ace_searchbtn_close:hover {	background-color: #656565;	background-position: 50% 100%;	color: white;	}	.ace_replacebtn.prev {	width: 54px	}	.ace_replacebtn.next {	width: 27px	}	.ace_button {	margin-left: 2px;	cursor: pointer;	-webkit-user-select: none;	-moz-user-select: none;	-o-user-select: none;	-ms-user-select: none;	user-select: none;	overflow: hidden;	opacity: 0.7;	border: 1px solid rgba(100,100,100,0.23);	padding: 1px;	-moz-box-sizing: border-box;	box-sizing:    border-box;	color: black;	}	.ace_button:hover {	background-color: #eee;	opacity:1;	}	.ace_button:active {	background-color: #ddd;	}	.ace_button.checked {	border-color: #3399ff;	opacity:1;	}	.ace_search_options{	margin-bottom: 3px;	text-align: right;	-webkit-user-select: none;	-moz-user-select: none;	-o-user-select: none;	-ms-user-select: none;	user-select: none;	}
+/*# sourceURL=ace/css/ace_searchbox */</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">@keyframes fadeInOpacity{0%{opacity:0}to{opacity:1}}:hover>*>.fbvd--wrapper{animation-name:fadeInOpacity;animation-duration:.3s;opacity:1}.fbvd--wrapper{position:absolute;top:10px;left:10px;opacity:0;text-align:center;margin:0;z-index:5}.fbvd--wrapper a{background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZmlsbD0iIzRiNGY1NiIgZD0iTTggMTUuNWw3LjUtNy41aC00LjV2LThoLTZ2OGgtNC41eiI+PC9wYXRoPjwvc3ZnPg==) no-repeat 3px 4.55px; background-color: #fff; display:inline-block;font:700 14px Helvetica,Arial,sans-serif;color:#4b4f56;text-decoration:none;vertical-align:middle;padding:0px 8px 0px;margin-right:8px;border-radius:2px; line-height: 22px; padding-left:19px; border: 1px solid #e7e7e7; background-size: 13px}.fbvd--wrapper a:last-child{margin-right:0}.fbvd--wrapper a:hover{text-decoration:none}.fbvd--wrapper a:focus{box-shadow:0 0 1px 2px rgba(88,144,255,.75),0 1px 1px rgba(0,0,0,.15);outline:none}.fbvd--wrapper b{font-size:13px;position:relative;top:1px;color:#3b5998;font-weight:400}</style></head>
+
+  <div class="gr-top-z-index gr-top-zero" tabindex="-1"><div data-reactroot="" class="_970ef1-hoverMenu _970ef1-referral"><div class="_970ef1-panel"><div class="_970ef1-tooltip _970ef1-tooltip_hidden undefined"></div><div class="_970ef1-buttonArea"><div class="_970ef1-btn _970ef1-btn_disable" tabindex="-1"></div></div><div class="_970ef1-buttonArea"><div class="_970ef1-referralArea" tabindex="-1"><div class="_970ef1-btn _970ef1-btn_referral"></div><span class="_970ef1-referralText">Invite Friends</span></div></div><div class="_970ef1-line"></div><div class="_970ef1-buttonArea"><div class="_970ef1-btn _970ef1-btn_grammarly" data-action="editor" tabindex="-1"></div></div></div></div></div><div style="visibility: hidden; top: -9999px; position: absolute; opacity: 0;"><div data-reactroot="" class="_970ef1-hoverMenu _970ef1-referral"><div class="_970ef1-panel"><div class="_970ef1-tooltip _970ef1-tooltip_hidden undefined"></div><div class="_970ef1-buttonArea"><div class="_970ef1-btn _970ef1-btn_disable" tabindex="-1"></div></div><div class="_970ef1-buttonArea"><div class="_970ef1-referralArea" tabindex="-1"><div class="_970ef1-btn _970ef1-btn_referral"></div><span class="_970ef1-referralText">Invite Friends</span></div></div><div class="_970ef1-line"></div><div class="_970ef1-buttonArea"><div class="_970ef1-btn _970ef1-btn_grammarly" data-action="editor" tabindex="-1"></div></div></div></div></div><body class="  pace-done" data-gr-c-s-loaded="true"><div id="MathJax_Message" style="display: none;"></div>
+    
+    <script src="./Gieom Frontend Hiring_files/55ba39a81acd32ac7d0002d4.js.download" async=""></script><script type="application/javascript" async="" defer="" src="./Gieom Frontend Hiring_files/track.js.download"></script><script type="text/javascript" async="" src="./Gieom Frontend Hiring_files/recaptcha__en.js.download"></script><script type="text/javascript" async="" src="./Gieom Frontend Hiring_files/5F90ycbP4JOg1fOUoELScA.js.download"></script><script type="text/javascript" async="" src="./Gieom Frontend Hiring_files/mixpanel-2.2.min.js.download"></script><script async="" src="./Gieom Frontend Hiring_files/analytics.js.download"></script><script type="text/javascript">
+      navigator.sayswho= (function(){
+        var ua= navigator.userAgent,
+          N= navigator.appName, tem,
+          M= ua.match(/(opera|chrome|safari|firefox|msie|trident)\/?\s*([\d\.]+)/i) || [];
+        M= M[2]? [M[1], M[2]]:[N, navigator.appVersion, '-?'];
+        if(M && (tem= ua.match(/version\/([\.\d]+)/i))!= null) M[2]= tem[1];
+        return M.join(' ');
+      })();
+
+      var browser = navigator.sayswho;
+      var parts = browser.split(" ");
+      browser = parts[0].toLowerCase();
+      version = parts[1];
+      var version_parts = version.split(".");
+      version = parseInt(version_parts[0]);
+
+      if ((browser == 'chrome' && version < 11) || (browser == 'firefox' && version < 10) || (browser == 'msie' && version < 10)) {
+        window.location.href = "/browser-not-supported/";
+      }
+    </script>
+
+    
+
+    
+    <div id="alert-message-holder">
+      
+
+      
+      
+    <div class="alert-message hidden">
+        <div class="message float-left"></div>
+        <div class="cross-holder float-left"><span class="small-cross sprites"></span></div>
+        <div class="clear"></div>
+      </div></div>
+    
+
+    
+    <div class="header">
+      <div class="float-left box-padding-20">
+        
+        
+        <div class="company-logo-header">
+          <img alt="HackerEarth" height="30" width="30" src="./Gieom Frontend Hiring_files/HE_identity_white.png">
+        </div>
+        
+
+
+        <div class="header-name ellipsis">Gieom Frontend Hiring Challenge</div>
+
+        
+        <div class="clear"></div>
+      </div>
+      <div class="float-right box-padding-20">
+
+        
+        <div class="user-name float-left standard-margin-right"> shivanandssonnad@gmail.com</div>
+        
+
+        
+
+
+
+
+        
+<div class="timer private-timer" time="43188" started="true" end-test="/AJAX/gieom-frontend-hiring-challenge/time-completed/" test-completed="/challenge/hiring/gieom-frontend-hiring-challenge/mark-completed/">
+  <div class="time-widget align-center">
+  <div id="hours">11</div>
+  <div class="colon">:</div>
+
+  <div id="mins">58</div>
+  <div class="colon">:</div>
+
+  <div id="secs">19</div>
+  <div class="weight-400 less-margin-left">left</div>
+  <div class="clear"></div>
+  </div>
+</div>
+
+<ul class="help-bar">
+  <li id="help-dropdown" class="nav-bar-menu nav-menu" expand="help-box" data-step="2" data-intro="Help Material">
+    <a href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/b95de7f1daae47a9a7bb1b3bec3ed3eb/#" class="white-color no-underline weight-400">
+      Help <i class="fa fa-caret-down"></i>
+    </a>
+  </li>
+</ul>
+
+
+<a href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/b95de7f1daae47a9a7bb1b3bec3ed3eb/#" class="end-test button btn-red ajax-modal" ajax="/AJAX/end_test_modal/23989/" target="end-test-modal">End Test</a>
+<div id="end-test-modal" class="modal-window small-modal fix-modal-top hidden"></div>
+
+
+<div class="clear"></div>
+
+
+      </div>
+      <div class="clear"></div>
+
+    </div>
+    
+    <div class="mfe" id="mfe"></div>
+    
+    <div class="body">
+      
+<div class="walkthrough-overlay hidden"></div>
+<div class="view-body-overlay" style="display: none;">
+  <div class="loading-heading align-center standard-margin larger dark weight-700 large-20">
+    Loading test...
+  </div>
+  <div class="loading-progress medium-margin"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+  
+  </div>
+  <div class="loading-info align-center medium-margin regular dark">Almost there</div>
+</div>
+<div class="view-body ">
+  <div id="pusher-app-key" class="hidden">1fb7ced9421f45390d9a</div>
+  <div id="left-pane-question-list" class="left-pane">
+    <div class="left-pane-header dark regular weight-700">
+      <div class="float-left">1 Questions</div>
+      <div class="float-right">Total Marks: 100.0</div>
+      <div class="clear"></div>
+    </div> <!-- /left-pane-header -->
+
+    <div class="left-pane-content">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <div class="section file">
+        <div class="section-header">
+          <div class="float-left weight-700 regular dark">
+              1 File Upload
+              
+                Question
+              
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="section-content">
+          
+            <div id="b95de7f1daae47a9a7bb1b3bec3ed3eb" class="show-question-statement question-item history file-flow selected" execute="">
+                <div id="status-bar-b95de7f1daae47a9a7bb1b3bec3ed3eb" class="status-bar float-left  tool-tip"></div>
+              <div class=" inline-block question-container float-left">
+                <div class="dark weight-600 float-left padding-10 width-100">
+                  <div class="s-no padding-top-5 padding-left-5 float-left padding-right-5" private-url-hash="b95de7f1daae47a9a7bb1b3bec3ed3eb">1. </div>
+                  <div class="question-statement padding-top-5">
+                    
+                      Gieom  - Kickstarter
+
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="inline-block float-right marks-container">
+                <div class="green-box darker weight-700 tool-tip top-border-radius bottom-border-radius">
+                + 100.0
+              </div>
+            </div>
+            </div>
+            <ol id="file-walkthrough-b95de7f1daae47a9a7bb1b3bec3ed3eb" class="joyRideTipContent">
+                <li data-id="left-pane-question-list" data-text="Next" class="custom right-pane-joyride-modal" data-options="tipLocation:right;">
+              <p>This is the list of questions.</p>
+              <div class="joyride-skip-tip-content inline-block float-left"><a class="joyride-skip-tip" href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/b95de7f1daae47a9a7bb1b3bec3ed3eb/#" onclick="$(document).joyride(&#39;end&#39;);">Skip Tour</a></div>
+              </li>
+              <li data-class="right-pane" data-text="Next" class="custom right-pane-joyride-modal" data-options="tipLocation:left;">
+              <p>This is a File-Upload question.</p>
+              <div class="joyride-skip-tip-content inline-block float-left"><a class="joyride-skip-tip" href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/b95de7f1daae47a9a7bb1b3bec3ed3eb/#" onclick="$(document).joyride(&#39;end&#39;);">Skip Tour</a></div>
+              </li>
+              <li data-class="problem-statement-b95de7f1daae47a9a7bb1b3bec3ed3eb" data-text="Next" class="custom" data-options="tipLocation:left;">
+              <p>This is the problem statement. Read it carefully before answering.</p>
+              <div class="joyride-skip-tip-content inline-block float-left"><a class="joyride-skip-tip" href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/b95de7f1daae47a9a7bb1b3bec3ed3eb/#" onclick="$(document).joyride(&#39;end&#39;);">Skip Tour</a></div>
+              </li>
+              <li data-class="max-marks-b95de7f1daae47a9a7bb1b3bec3ed3eb" data-text="Next" class="custom" data-options="tipLocation:left;">
+              <p>If you solve this problem correctly, this is the maximum score that will be assigned.</p>
+              <div class="joyride-skip-tip-content inline-block float-left"><a class="joyride-skip-tip" href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/b95de7f1daae47a9a7bb1b3bec3ed3eb/#" onclick="$(document).joyride(&#39;end&#39;);">Skip Tour</a></div>
+              </li>
+              <li data-id="id-upload-b95de7f1daae47a9a7bb1b3bec3ed3eb" data-text="Next" class="custom" data-options="tipLocation:left;">
+              <p>Upload your file by clicking here.</p>
+              <div class="joyride-skip-tip-content inline-block float-left"><a class="joyride-skip-tip" href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/b95de7f1daae47a9a7bb1b3bec3ed3eb/#" onclick="$(document).joyride(&#39;end&#39;);">Skip Tour</a></div>
+              </li>
+              <li data-id="wmd-input-b95de7f1daae47a9a7bb1b3bec3ed3eb" data-text="Next" class="custom" data-options="tipLocation:left;">
+              <p>Specify any instructions or comments about your file that you would like your evaluator to see.</p>
+              <div class="joyride-skip-tip-content inline-block float-left"><a class="joyride-skip-tip" href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/b95de7f1daae47a9a7bb1b3bec3ed3eb/#" onclick="$(document).joyride(&#39;end&#39;);">Skip Tour</a></div>
+              </li>
+              <li data-class="file-submit-button-b95de7f1daae47a9a7bb1b3bec3ed3eb" data-text="Finish" class="custom" data-options="tipLocation:top;">
+              <p>Click Submit to complete your submission.</p>
+              <a class="joyride-skip-tip not-visible" href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/b95de7f1daae47a9a7bb1b3bec3ed3eb/#" onclick="$(document).joyride(&#39;end&#39;);">Skip Tour</a>
+              </li>
+            </ol>
+          
+        </div>
+      </div>
+      
+
+      
+
+      
+
+      
+      
+      
+    </div>
+  </div> <!-- /left-pane -->
+  </div>
+  <div class="right-pane transition padding-top-20">
+    <div id="right-pane-question-content" class="right-pane-content">
+      <div id="problem-detail-wrapper" class="problem-detail-wrapper ">
+        <div id="problem-detail" class="problem-detail"><div data-reactroot="" class="all-problems hidden" style="display: block;"><div class="all-obj-problems"></div><div class="all-subj-problems"></div><div class="all-prog-problems"></div><div class="all-prog-problems"></div><div class="all-prog-problems"></div><div class="all-prog-problems"></div><div class="all-file-problems"><div class="single-problem-node problem-b95de7f1daae47a9a7bb1b3bec3ed3eb" style="display: block;"><div class="file" data-id="b95de7f1daae47a9a7bb1b3bec3ed3eb"><div class="float-left width-100  padding-bottom-10 lighter-border-bottom medium-margin-bottom"><div class="weight-700 content-heading inline-block less-padding-2-right">Question</div><div class="serial-number content-heading inline-block serial-number-b95de7f1daae47a9a7bb1b3bec3ed3eb">1</div><div class="regular dark float-right inline-block"><div is="true" private_url_hash="b95de7f1daae47a9a7bb1b3bec3ed3eb" class="file-start-flow float-right inline-block padding-left-10 tool-tip flow-div-file" title="See how to attempt this question."><i class="flow-help fa fa-question-circle font-size-16 light"></i></div><div class="problem-score float-right max-marks padding-left-10 padding-right-10 inline-block max-marks-b95de7f1daae47a9a7bb1b3bec3ed3eb"><!-- react-text: 21 -->Max. Marks<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><!-- react-text: 23 -->100.00<!-- /react-text --></div></div></div><div class="clear"></div><div class="problem-statement problem-statement-b95de7f1daae47a9a7bb1b3bec3ed3eb"><div class="weight-700 large dark medium-margin-bottom">Gieom  - Kickstarter</div><div class="file-problem complete-problem-statement dark"><p><strong>[Problem Statement]</strong></p>
+<p>Develop a pseudo front end application which would let the users help list and browse top Kickstarter projects conveniently.</p>
+<p><strong>[Minimum Requirement]</strong></p>
+<p>— Use of Web API to fetch project details.</p>
+<p><strong>Utilise Response Parameters</strong>:</p>
+<p>[s.no, amt.pledged, blurb, by, country, currency, end.time, location, percentage.funded, num.backers, state, title, type, url].</p>
+<p>Implement functionality to list project details in a web page.</p>
+<p>— Visually interactive responsive design listing all the projects.</p>
+<p>— Use your imagination and add features which would make things easier for end users.</p>
+<p>— Zip all your Source code, Screenshot, &amp; Deployment Instructions and upload.</p>
+<p><strong>[Plus Point]</strong></p>
+<p>— A feature to Search (via name).</p>
+<p>— Implement Sort feature (to filter result through ‘percenatge funded’ in ascending and descending order).</p>
+<p>— href url parameter.(Should open in new window | target="_blank")</p>
+<p>— Use your imagination and add features which would make things easier for end users.</p>
+<p>— Zip all your <strong>Source code, Screenshot, &amp; Deployment Instructions</strong> and upload.</p>
+<p><strong>[Extra Work]</strong></p>
+<p>— Implement feature to sort projects based on end time.(Sort based on old-to-new and new-to-old).</p>
+<p>— Add autocomplete feature to Search projects conveniently.</p>
+<p>— Custom elegant design, fonts and icons to make web app more user-friendly.</p>
+<p>— You may add portfolio activity comprising awesome work you have done on web application(s).</p>
+<p>— Use your imagination and add features which would make things easier for end users.</p>
+<p><strong>[Guide]</strong></p>
+<p>— <strong>Gieom Kickstarter API</strong>: http://starlord.hackerearth.com/kickstarter</p>
+<p>— <strong>Frontend Stack</strong>:</p>
+<ul>
+<li>
+<p>Vanilla Javascript, jQuery, HTML, CSS.</p>
+</li>
+<li>
+<p>Custom CSS, Good if you can work around Bootstrap or Material Design.</p>
+</li>
+<li>
+<p>Optional: Typography, Subtle pattern, Custom Icons.</p>
+</li>
+<li>
+<p>Good to have: Angular2 or React.</p>
+</li>
+</ul>
+<p>— <strong>Prepend</strong> https://www.kickstarter.com/ before every Url param from API Response.</p>
+<p>— PS: Application can be built with use of client-side scripting and need not require any backend.</p>
+<p>— HTML5 Local Storage: http://html5demos.com/storage</p>
+<p>— For icons and subtle texture:</p>
+<p>http://glyphsearch.com/</p>
+<p>http://subtlepatterns.com/thumbnail-view/</p>
+<p>http://codebeautify.org/jsonviewer</p>
+<p>http://www.flaticon.com/categories</p>
+<p><strong>[Wireframe MVP / Reference Structure]</strong></p>
+<p>Mockup image with instructions</p>
+<p><img alt="Home" src="./Gieom Frontend Hiring_files/6413343.png"></p>
+<p><img alt="Detail" src="./Gieom Frontend Hiring_files/6daabf5.png"></p>
+<p><strong>Note:  Mockup design is just a reference made available to kickstart the design process, you are free to come up with your own design, we always admire creativity.</strong></p>
+<p><strong>[API Params]</strong></p>
+<p><strong>amt.pledged</strong>: amount pledged</p>
+<p><strong>blurb</strong>: project blurb</p>
+<p><strong>by</strong>: project creator</p>
+<p><strong>country</strong>: abbreviated country code</p>
+<p><strong>currency</strong>: currency type of amt.pledged</p>
+<p><strong>end.time</strong>: campaign end time (string "YYYY-MM-DDThh:mm:ss-TZD")</p>
+<p><strong>location</strong>: mostly city</p>
+<p><strong>pecentage.funded</strong>: unit %</p>
+<p><strong>num.backers</strong>: total number of backers</p>
+<p><strong>state</strong>: mostly US states (string of length 2) and others</p>
+<p><strong>title</strong>: project title</p>
+<p><strong>type</strong>: type of location (string: County/Island/LocalAdmin/Suburb/Town/Zip)</p>
+<p><strong>url</strong>: project url after domain (string)</p></div><div class="clear"></div></div></div><div class="clear"></div><form is="true" enctype="multipart/form-data" show-progress="true" id="form-b95de7f1daae47a9a7bb1b3bec3ed3eb"><div class="wrapper margin-bottom-30"><div class="large weight-700 dark margin-bottom-10">Upload File</div><div class="upload-wrapper inline-block"><div class="original-background"></div><div class="progressbar-block"></div><div class="upload-banner"><div class="float-left dark large upload-file-name hidden"></div><a id="upload-file-button-regular-file-b95de7f1daae47a9a7bb1b3bec3ed3eb" href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/b95de7f1daae47a9a7bb1b3bec3ed3eb/#" class="upload-file-button float-left"><i class="fa fa-cloud-upload less-margin-right"></i><!-- react-text: 40 -->Upload File<!-- /react-text --></a><a id="cancel-upload-button-regular-file-b95de7f1daae47a9a7bb1b3bec3ed3eb" href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/b95de7f1daae47a9a7bb1b3bec3ed3eb/#" class="cancel-upload-button float-right hidden"><i class="fa fa-times-circle large"></i></a><div class="clear"></div><input type="file" class="hidden" name="upload" id="file-upload-b95de7f1daae47a9a7bb1b3bec3ed3eb"></div></div><div class="clear"></div></div><div class="wmd-container wrapper margin-bottom-30"><div class="large weight-700 dark margin-bottom-10">Your Answer</div><div class="wmd-panel"><div id="wmd-button-bar-b95de7f1daae47a9a7bb1b3bec3ed3eb" class="wmd-button-row-wrapper"><ul id="wmd-button-row-b95de7f1daae47a9a7bb1b3bec3ed3eb" class="wmd-button-row"><li class="wmd-button" id="wmd-bold-button-b95de7f1daae47a9a7bb1b3bec3ed3eb" title="Strong &lt;strong&gt; Ctrl+B" style="left: 0px;"><span style="background-position: 0px 0px;"></span></li><li class="wmd-button" id="wmd-italic-button-b95de7f1daae47a9a7bb1b3bec3ed3eb" title="Emphasis &lt;em&gt; Ctrl+I" style="left: 25px;"><span style="background-position: -20px 0px;"></span></li><li class="wmd-spacer wmd-spacer1" id="wmd-spacer1-b95de7f1daae47a9a7bb1b3bec3ed3eb"></li><li class="wmd-button" id="wmd-link-button-b95de7f1daae47a9a7bb1b3bec3ed3eb" title="Hyperlink &lt;a&gt; Ctrl+L" style="left: 75px;"><span style="background-position: -40px 0px;"></span></li><li class="wmd-button" id="wmd-quote-button-b95de7f1daae47a9a7bb1b3bec3ed3eb" title="Blockquote &lt;blockquote&gt; Ctrl+Q" style="left: 100px;"><span style="background-position: -60px 0px;"></span></li><li class="wmd-button" id="wmd-code-button-b95de7f1daae47a9a7bb1b3bec3ed3eb" title="Code Sample &lt;pre&gt;&lt;code&gt; Ctrl+K" style="left: 125px;"><span style="background-position: -80px 0px;"></span></li><li class="wmd-button" id="wmd-image-button-b95de7f1daae47a9a7bb1b3bec3ed3eb" title="Image &lt;img&gt; Ctrl+G" style="left: 150px;"><span style="background-position: -100px 0px;"></span></li><li class="wmd-spacer wmd-spacer2" id="wmd-spacer2-b95de7f1daae47a9a7bb1b3bec3ed3eb"></li><li class="wmd-button" id="wmd-olist-button-b95de7f1daae47a9a7bb1b3bec3ed3eb" title="Numbered List &lt;ol&gt; Ctrl+O" style="left: 200px;"><span style="background-position: -120px 0px;"></span></li><li class="wmd-button" id="wmd-ulist-button-b95de7f1daae47a9a7bb1b3bec3ed3eb" title="Bulleted List &lt;ul&gt; Ctrl+U" style="left: 225px;"><span style="background-position: -140px 0px;"></span></li><li class="wmd-button" id="wmd-heading-button-b95de7f1daae47a9a7bb1b3bec3ed3eb" title="Heading &lt;h1&gt;/&lt;h2&gt; Ctrl+H" style="left: 250px;"><span style="background-position: -160px 0px;"></span></li><li class="wmd-button" id="wmd-hr-button-b95de7f1daae47a9a7bb1b3bec3ed3eb" title="Horizontal Rule &lt;hr&gt; Ctrl+R" style="left: 275px;"><span style="background-position: -180px 0px;"></span></li><li class="wmd-spacer wmd-spacer3" id="wmd-spacer3-b95de7f1daae47a9a7bb1b3bec3ed3eb"></li><li class="wmd-button" id="wmd-undo-button-b95de7f1daae47a9a7bb1b3bec3ed3eb" title="Undo - Ctrl+Z" style="left: 325px;"><span style="background-position: -200px -20px;"></span></li><li class="wmd-button" id="wmd-redo-button-b95de7f1daae47a9a7bb1b3bec3ed3eb" title="Redo - Ctrl+Y" style="left: 350px;"><span style="background-position: -220px -20px;"></span></li></ul><div class="wmd-right-options" style=""><div class="wmd-right-option wmd-close-fullscreen" style="display:none"><i class="fa fa-compress" title="Close fullscreen"></i></div><div class="wmd-right-option wmd-go-fullscreen" style=""><i class="fa fa-arrows-alt" title="Go fullscreen"></i></div></div></div><textarea data-autoresize="true" class="wmd-input no-border" name="answer_text" placeholder="Write your answer here" id="wmd-input-b95de7f1daae47a9a7bb1b3bec3ed3eb"></textarea><grammarly-btn><div data-reactroot="" class="_e725ae-textarea_btn _e725ae-not_focused" style="visibility: hidden; z-index: 2;"><div class="_e725ae-transform_wrap"><div title="Protected by Grammarly" class="_e725ae-status">&nbsp;</div></div></div></grammarly-btn></div><div class="wmd-preview-container"><div class="large weight-700 dark margin-bottom-10">Preview</div><div id="wmd-preview-b95de7f1daae47a9a7bb1b3bec3ed3eb" class="wmd-panel wmd-preview less-margin"></div></div></div><div is="true" class="buttons" private-url-hash="b95de7f1daae47a9a7bb1b3bec3ed3eb"><input type="submit" class="button btn-blue float-left file-submit-button no-margin-right file-submit-button-b95de7f1daae47a9a7bb1b3bec3ed3eb loader-b95de7f1daae47a9a7bb1b3bec3ed3eb" name="submit" value="Submit"><label class="save-message save-message-b95de7f1daae47a9a7bb1b3bec3ed3eb hidden float-left">Answer Saved</label></div></form><div class="clear"></div><div is="true" class="next-button-banner not-visible" private-url-hash="b95de7f1daae47a9a7bb1b3bec3ed3eb"><a href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/b95de7f1daae47a9a7bb1b3bec3ed3eb/#" class="load-next-question load-next-question-b95de7f1daae47a9a7bb1b3bec3ed3eb" target=""><!-- react-text: 60 -->Next Question<!-- /react-text --><!-- react-text: 61 --> <!-- /react-text --><i class="fa fa-angle-right"></i></a></div></div></div><div class="all-android-problems"></div><div class="all-prog-problems"></div><div class="all-prog-problems"></div><div><noscript></noscript></div></div></div>
+      </div>
+    </div>
+    <div class="right-pane-footer"></div>
+    <div class="right-pane-view-caret"></div>
+  </div> <!-- /right-pane -->
+</div> <!-- /view-body -->
+
+
+
+
+
+
+
+<div id="external-link-modal" class="modal-window very-large-modal">
+  <div class="modal-content large dark align-left">
+    <iframe id="external-link-iframe" class="external-link-iframe-in-modal" frameborder="0" src="./Gieom Frontend Hiring_files/saved_resource.html"></iframe>
+</div>
+</div>
+
+<div id="event-url" class="hidden">/challenge/hiring/gieom-frontend-hiring-challenge/</div>
+<div id="upload-snapshot-url" class="hidden">/AJAX/gieom-frontend-hiring-challenge/upload-snapshot/</div>
+<div id="activity-log-url" class="hidden">/gieom-frontend-hiring-challenge/log_activity/</div>
+
+<div id="logout-reason-url" class="hidden" ajax="/utilityapp/log-user-logout-reason/" event_id="23989" user_id="919980"></div>
+
+<div id="get-user-logout-data" class="hidden" ajax="/utilityapp/get-user-logout-data/" event_id="23989" user_id="919980"></div>
+
+<div id="get-event-problems-json" class="hidden" ajax="/AJAX/get-event-problems-json/23989/"></div>
+
+<a id="end-test-click" href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/mark-completed/" redirect-url="None" class="button btn-red btn-large weight-700 inline-block hidden"></a>
+
+<div class="expand-box header-dropdown top-40 custom-expand-box" id="help-box" style="display: none;">
+  <ul class="no-margin recruiter-ul">
+    <a href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/b95de7f1daae47a9a7bb1b3bec3ed3eb/#" class="show-modal" target="instructions-modal">
+        <li>Test Instructions</li>
+    </a>
+  </ul>
+</div>
+<div class="hidden" id="submission-pusher-channel" realtime="true">
+  23989-364f1be7cadef8999067518150cd58fb99fe78c0
+</div>
+
+    
+    
+
+    
+    <div id="ghost-ping-url" class="hidden" ajax="/ghost/ping/"></div>
+
+    
+    
+
+    
+
+
+    
+    <script type="text/javascript">
+      // Make the static variable available for all js files
+      var STATIC_URL = "https://hackerearth.global.ssl.fastly.net/static/";
+
+      // Store CSRF_COOKIE
+      var CSRF_COOKIE_USED = "True";
+      var CSRF_COOKIE = "kXwifwe9bAQXjQeW1WUAYOsGzJXeP6NiLGz3x8DDPs3ksEVB73tZmmsHdTu1DHpq";
+
+      var CURRENT_PATH = "https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/";
+      var HISTORY = '[]';
+
+      // Used in idev3.js
+      var is_user_logged_in = true;
+    </script>
+
+    
+    
+
+
+<script>
+    UPLOADING_TEXT = "Uploading";
+    UPLOADED_TEXT = "Uploaded";
+    SAVING_TEXT = "Saving..";
+    UPLOAD_SUCCESS_MESSAGE = "File saved successfully.";
+    UPLOAD_ERROR_MESSAGE = "An error occured while saving, please try again in sometime.";
+</script>
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/alljs.js.download" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./Gieom Frontend Hiring_files/base1.0.1.js.download" crossorigin="anonymous"></script>
+    
+    <script src="./Gieom Frontend Hiring_files/api.js.download" async="" defer=""></script>
+    
+
+    
+      
+      
+    
+
+    
+    <script>
+      (function(_,e,rr,s){_errs=[s];var c=_.onerror;_.onerror=function(){var a=arguments;_errs.push(a);
+      c&&c.apply(this,a)};var b=function(){var c=e.createElement(rr),b=e.getElementsByTagName(rr)[0];
+      c.src="//beacon.errorception.com/"+s+".js";c.async=!0;b.parentNode.insertBefore(c,b)};
+      _.addEventListener?_.addEventListener("load",b,!1):_.attachEvent("onload",b)})
+      (window,document,"script","55ba39a81acd32ac7d0002d4");
+    </script>
+
+    
+    <script type="text/x-mathjax-config;executed=true">
+      MathJax.Hub.Config({messageStyle: "none",
+        tex2jax: {
+          inlineMath: [['$$','$$']],
+          displayMath: [['$$$', '$$$']],
+          preview: "none"
+        }
+      });
+    </script>
+    <script type="text/javascript" async="" src="./Gieom Frontend Hiring_files/MathJax.js.download"></script>
+    <script type="text/javascript" src="./Gieom Frontend Hiring_files/MathJax.js(1).download"></script>
+
+    <script type="text/javascript">
+      window.addEventListener("load", function() {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+      });
+    </script>
+    
+
+    <script type="text/javascript">
+      // Used in offline js which shows a bar on top when user goes offline
+      Offline.options = {
+        interceptRequests: false,
+        requests: false,
+      };
+    </script>
+
+    
+    <script type="text/javascript" src="./Gieom Frontend Hiring_files/detect_timezone.js.download" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      function setTimezoneCookie(detected_user_tz) {
+        /* Sets the detected user timezone as a cookie in the browser.
+           If someone changes it or removes it, a sanity check is
+           performed and the cookie is reset.
+
+           This cookie is set for ready availability of user timezone
+           in the backend.
+        */
+        var USER_TIMEZONE_COOKIE = 'user_tz';
+        // Try to get the existing user timezone cookie stored
+        // in the browser.
+        user_tz = readCookie(USER_TIMEZONE_COOKIE);
+        // Flag to determine whether a new cookie has to be created.
+        create_cookie = false;
+        if(user_tz) {
+          if(user_tz !== detected_user_tz) {
+            // If someone has changed the cookie in some way, we
+            // set a new cookie.
+            eraseCookie(USER_TIMEZONE_COOKIE);
+            create_cookie = true;
+          }
+        } else {
+          create_cookie = true;
+        }
+        // Create a new cookie if create_cookie flag is set.
+        createCookie(USER_TIMEZONE_COOKIE, detected_user_tz, 1);
+      }
+      $(document).ready(function(){
+        var timezone = jstz.determine_timezone(); // Now you have an instance of the TimeZone object.
+        // Set as a cookie in browser for easy access in backend.
+        setTimezoneCookie(timezone.name());
+
+        // Set as a js variable for easy access across frontend.
+        USER_TIMEZONE = timezone.name()
+
+        
+          var profile_timezone = "Asia/Kolkata";
+          if (timezone.name() !== profile_timezone) {
+            $.ajax({
+              type: "POST",
+              url: "/users/AJAX/set-timezone/",
+              data: {
+                'timezone': timezone.name(),
+              },
+            });
+          }
+        
+      });
+    </script>
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-34729975-1', 'auto');
+      ga('require', 'displayfeatures');
+      
+      ga('set', '&uid', 919980);
+      
+      ga('send', 'pageview');
+    </script>
+    
+
+    
+    <script type="text/javascript">
+    (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);mixpanel.init("4c30b8635363027dfb780d5a61785112");
+    </script>
+
+    <script type="text/javascript">
+    
+      
+        mixpanel.register({
+          "url_path": "/challenge/hiring/gieom-frontend-hiring-challenge/problems/",
+          "username": "shivanand12",
+          "email": "shivanandssonnad@gmail.com",
+          "date_of_joining": "Sept. 17, 2016, 4 a.m.",
+          "user_bucket": "40"
+        });
+        
+      
+      $(document).ready(function(){
+        //mixpanel delegate links custom method
+        mixpanel.delegate_links = function (parent, selector, event_name, properties) {
+          properties = properties || {};
+          parent = parent || document.body;
+          parent = $(parent);
+          parent.on('click', selector, function (event) {
+            var new_tab = event.which === 2 || event.metaKey || event.target.target === '_blank' || this.target === '_blank';
+            properties.url = event.target.href || this.href;
+            function callback() {
+              if (new_tab) {
+                return;
+              }
+              window.location = properties.url;
+            }
+            if (!new_tab) {
+              event.preventDefault();
+              setTimeout(callback, 300);
+            }
+            mixpanel.track(event_name, properties, callback);
+          });
+        };
+      });
+    
+    </script>
+    
+
+    
+    <script type="text/javascript">
+      // Include the UserVoice JavaScript SDK (only needed once on a page)
+      UserVoice=window.UserVoice||[];
+      (function(){
+        var uv=document.createElement('script');
+        uv.type='text/javascript';
+        uv.async=true;
+        uv.src='//widget.uservoice.com/5F90ycbP4JOg1fOUoELScA.js';
+        var s=document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(uv,s)})();
+
+      //
+      // UserVoice Javascript SDK developer documentation:
+      // https://www.uservoice.com/o/javascript-sdk
+      //
+
+      // Set colors
+      UserVoice.push(['set', {
+        accent_color: '#448dd6',
+        trigger_color: 'white',
+        trigger_background_color: 'rgba(46, 49, 51, 0.6)'
+      }]);
+
+      // Identify the user and pass traits
+      // To enable, replace sample data with actual user traits and uncomment the line
+      UserVoice.push(['identify', {
+        //email:      'john.doe@example.com', // User’s email address
+        //name:       'John Doe', // User’s real name
+        //created_at: 1364406966, // Unix timestamp for the date the user signed up
+        //id:         123, // Optional: Unique id of the user (if set, this should not change)
+        //type:       'Owner', // Optional: segment your users by type
+        //account: {
+        //  id:           123, // Optional: associate multiple users with a single account
+        //  name:         'Acme, Co.', // Account name
+        //  created_at:   1364406966, // Unix timestamp for the date the account was created
+        //  monthly_rate: 9.99, // Decimal; monthly rate of the account
+        //  ltv:          1495.00, // Decimal; lifetime value of the account
+        //  plan:         'Enhanced' // Plan name for the account
+        //}
+      }]);
+
+      // Add default trigger to the bottom-right corner of the window:
+      UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
+
+      // Or, use your own custom trigger:
+      //UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
+
+      // Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
+      UserVoice.push(['autoprompt', {}]);
+    </script>
+    
+
+    
+<script type="text/javascript">
+    // Following global variables are used to carry translated strings from HTML pages to 'bluebook' React templates
+    var ALMOST_THERE_TEXT = 'Almost there';
+    var TIME_LEFT_TEXT = 'Time left';
+    var TIME_OVER_MSG_TEXT = 'Your time for this question is over. You cannot change your answer now.';
+    var NEGATIVE_MARKS_TEXT = 'Negative Marks';
+    var TIMED_MCQ_TEXT = 'It is a timed MCQ question. Once loaded, timer will start. You have {0} seconds to submit the answer.';
+    var QUESTION_TEXT = 'Question';
+    var LOAD_QUESTION_TEXT = 'Load Question';
+    var FLOW_HELP_TEXT = 'See how to attempt this question.';
+    var MAX_MARKS_TEXT = 'Max. Marks';
+    var LOADING_ERR_MSG_TEXT = 'Oops! There seems to be some issue. Please refresh the page.';
+    var LOAD_CODE_EDITOR_TEXT = 'Load Code Editor';
+    var LOADING_TEXT = 'Loading Code Editor...';
+    var CODE_SUBMIT_HELP_TEXT = 'You can submit code after loading editor';
+    var NEW_SUBMISSION_TEXT = 'New Submission';
+    var ALL_SUBMISSIONS_TEXT = 'All Submissions';
+    var REFRESHING_TEXT = 'Refreshing...';
+    var REFRESH_ALL_SUBMISSIONS_TEXT = 'Refresh All Submissions List';
+    var EXPLAINATION_TEXT = 'Explanation';
+    var SAMPLE_INPUT_TEXT = 'Sample Input';
+    var SAMPLE_OUTPUT_TEXT = 'Sample Output';
+    var PLAINTEXT_LINK_TEXT = 'Plaintext Link';
+    var TIME_LIMIT_TEXT = 'Time Limit';
+    var MEMORY_LIMIT_TEXT = 'Memory Limit';
+    var SOURCE_LIMIT_TEXT = 'Source Limit';
+    var MARKING_SCHEME_TEXT = 'Marking Scheme';
+    var ALLOWED_LANGUAGES_TEXT = 'Allowed Languages';
+    var SUBMITTING_TEXT = 'Submitting..';
+    var ATTEMPTED_TEXT = 'Attempted';
+    var SUBMIT_TEXT = 'Submit';
+    var ALERT_TEXT_1 = 'Please attach a file to your answer';
+    var UPLOAD_FILE_TEXT = 'Upload File';
+    var UPLOAD_PREDICTION_FILE_TEXT = 'Upload File';
+    var UPLOAD_SOURCE_CODE_TEXT = 'Upload Source Code';
+    var UPLOAD_APK_TEXT = 'Upload Android Application (.apk)';
+    var ALERT_TEXT_2 = 'Your time for this question is over. You cannot change your answer now.';
+    var NOT_ATTEMPTED_TEXT = 'Not Attempted';
+    var ALERT_TEXT_3 = 'Answer was reset successfully!';
+    var ALERT_TEXT_4 = 'You cannot reset the answer now!';
+    var ALERT_TEXT_5 = 'Your time for this question is over. You cannot reset your answer now.';
+    var ALERT_TEXT_6 = 'Your time for this question is over. You cannot change your answer now.';
+    var RESET_ANSWER_TEXT = 'Reset Answer';
+    var ANSWER_SAVED_TEXT = 'Answer Saved';
+    var ANSWER_UNSAVED_TEXT = 'Do not forget to submit your answer';
+    var NEXT_QUESTION_TEXT = 'Next Question';
+    var WRITE_ANSWER_TEXT = 'Write your answer here';
+    var WARNING_TEXT = 'Select atleast one option.';
+    var CHANGE_FILE_TEXT = 'Change File';
+    var DISABLE_ERROR_MESSAGE = 'Please upload APK file first!';
+    var YOUR_ANSWER_TEXT = 'Your Answer';
+    var PREVIEW_TEXT = 'Preview';
+    var WEBCAM_NOT_ACCESSIBLE_MESSAGE = "Could not access webcam. Enable webcam or use latest version of chrome/firefox browser.";
+    var TEST_TO_FINISH_MESSAGE = 'Test is about to finish in 5 mins';
+    var TIME_COMPLETED_MESSAGE = 'The time has completed!';
+    var LEAVE_CONFIRM_MESSAGE_1 = 'Are you sure you want to leave?';
+    var WEBCAM_ACCESS_INFO_1 = 'This test requires webcam access. Give webcam permission.';
+    var WEBCAM_ACCESS_INFO_2 = 'You can not take test without giving access to webcam.';
+    var TIME_UP_MESSAGE = 'Time Up!';
+    var TIME_OVER_MESSAGE_1 = 'Your time for this question is over. You cannot change your answer now.';
+    var PLEASE_WAIT_MESSAGE_1 = 'Please wait, your answer is being submitted.';
+    var ATTEMPTED_MESSAGE = 'Attempted';
+    var NOT_ATTEMPTED_MESSAGE = 'Not Attempted';
+    var PROCTOR_ALERT_1 = 'You are a superuser. I will let you cheat.';
+    var PROCTOR_ALERT_2 = 'You will be logged out if you leave this page!';
+
+    // Function analogous to python string format function
+    String.prototype.format = function() {
+        var args = arguments;
+        this.unkeyed_index = 0;
+        return this.replace(/\{(\w*)\}/g, function(match, key) {
+            if (key === '') {
+                key = this.unkeyed_index;
+                this.unkeyed_index++
+            }
+            if (key == +key) {
+                return args[key] !== 'undefined'
+                    ? args[key]
+                    : match;
+            } else {
+                for (var i = 0; i < args.length; i++) {
+                    if (typeof args[i] === 'object' && typeof args[i][key] !== 'undefined') {
+                        return args[i][key];
+                    }
+                }
+                return match;
+            }
+        }.bind(this));
+    };
+</script>
+
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/bigpipe.js.download" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/Markdown.All.js.download" crossorigin="anonymous"></script><div data-html2canvas-ignore="true" class="uv-icon uv-bottom-right "><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="39px" height="39px" viewBox="0 0 39 39" enable-background="new 0 0 39 39" xml:space="preserve">
+<g>
+	<path class="uv-bubble-background" fill="rgba(46, 49, 51, 0.6)" d="M31.425,34.514c-0.432-0.944-0.579-2.007-0.591-2.999c4.264-3.133,7.008-7.969,7.008-13.409
+		C37.842,8.658,29.594,1,19.421,1S1,8.658,1,18.105c0,9.446,7.932,16.79,18.105,16.79c1.845,0,3.94,0.057,5.62-0.412
+		c0.979,1.023,2.243,2.3,2.915,2.791c3.785,2.759,7.571,0,7.571,0S32.687,37.274,31.425,34.514z" style="fill: rgba(46, 49, 51, 0.6);"></path>
+	<g>
+		<g>
+			<path class="uv-bubble-foreground" fill="#FFFFFF" d="M16.943,19.467c0-3.557,4.432-3.978,4.432-6.058c0-0.935-0.723-1.721-2.383-1.721
+				c-1.508,0-2.773,0.725-3.709,1.87l-2.441-2.743c1.598-1.9,4.01-2.924,6.602-2.924c3.891,0,6.271,1.959,6.271,4.765
+				c0,4.4-5.037,4.732-5.037,7.265c0,0.481,0.243,0.994,0.574,1.266l-3.316,0.965C17.303,21.459,16.943,20.522,16.943,19.467z
+				 M16.943,26.19c0-1.326,1.114-2.441,2.44-2.441c1.327,0,2.442,1.115,2.442,2.441c0,1.327-1.115,2.441-2.442,2.441
+				C18.058,28.632,16.943,27.518,16.943,26.19z" style="fill: white;"></path>
+		</g>
+	</g>
+</g>
+</svg>
+<div data-html2canvas-ignore="true" class="uv-popover uv-top uv-scale-bottom-right uv-is-hidden" id="uv-1" style="left: -284px; position: absolute; top: -339px;">      <div class="uv-popover-content">        <div class="uv-popover-iframe-container"><iframe name="uvw-iframe-undefined" class="uvw-dialog-iframe uv-popover-iframe" style="display: block; background: transparent; border: none; width: 100%; height: 100%; visibility: visible;" allowtransparency="true" frameborder="0" src="./Gieom Frontend Hiring_files/5F90ycbP4JOg1fOUoELScA.html"></iframe></div>                <!-- shadow for ie8 -->        <div class="uv-popover-content-shadow"></div>      </div>    <div class="uv-popover-tail" style="left: 292px;"></div></div></div>
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/prettifyall.js.download" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/lab.js.download" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/jquery.joyride-2.1.js.download" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/redirect_on_event_end.js.download" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/jquery.iframetracker.js.download" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/problems_new.js.download" crossorigin="anonymous"></script>
+
+
+
+
+
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/test_proctor.js.download" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/activity_log.js.download" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  // Make code constants available globally in JS
+  // Move to problems page if needed
+  var MAP_LANG_TO_NAME = {"SCALA_2118": "Scala 2.11.8", "LUA": "Lua", "PASCAL": "Pascal", "CSHARP": "C#", "CPP": "C++", "PYTHON3": "Python 3", "POSTGRESQL": "PostgreSQL", "SCALA": "Scala", "PERL": "Perl", "HASKELL": "Haskell", "D": "D", "R": "R(RScript)", "CPP11": "C++11", "GO": "Go", "RUBY": "Ruby", "GROOVY": "Groovy", "LOLCODE": "LOLCODE", "LISP": "Lisp", "Text": "Text", "WHENEVER": "Whenever", "MYSQL": "MySQL", "OBJECTIVEC": "Objective-C", "PHP": "PHP", "JAVASCRIPT_UI": "JavaScript", "PYTHON": "Python", "JAVASCRIPT": "JavaScript(Rhino)", "VB": "Visual Basic", "vp": "N/A", "TEXTFILE": "Text", "JAVA8": "Java 8", "JAVASCRIPT_NODE": "JavaScript(Node.js)", "RACKET": "Racket", "HTML": "HTML", "SWIFT": "Swift", "RUST": "Rust", "FSHARP": "F#", "C": "C", "OCAML": "OCaml", "OCTAVE": "Octave", "CLOJURE": "Clojure", "BEFUNGE": "Befunge", "CSS": "CSS", "ERLANG": "Erlang", "JAVA": "Java", "LISP_SBCL": "Lisp (SBCL)", "JULIA": "Julia", "ORACLE": "Oracle Database", "MSSQL": "MSSQL"};
+  var MAP_NAME_TO_LANG = {"Lisp (SBCL)": "LISP_SBCL", "Java": "JAVA", "Scala": "SCALA", "JavaScript": "JAVASCRIPT_UI", "Perl": "PERL", "Lua": "LUA", "JavaScript(Rhino)": "JAVASCRIPT", "MySQL": "MYSQL", "Erlang": "ERLANG", "LOLCODE": "LOLCODE", "C#": "CSHARP", "Whenever": "WHENEVER", "HTML": "HTML", "Rust": "RUST", "Octave": "OCTAVE", "Ruby": "RUBY", "Scala 2.11.8": "SCALA_2118", "Groovy": "GROOVY", "C": "C", "Python 3": "PYTHON3", "Lisp": "LISP", "F#": "FSHARP", "N/A": "vp", "C++": "CPP", "Racket": "RACKET", "Objective-C": "OBJECTIVEC", "Swift": "SWIFT", "R(RScript)": "R", "D": "D", "Clojure": "CLOJURE", "Befunge": "BEFUNGE", "Java 8": "JAVA8", "CSS": "CSS", "PostgreSQL": "POSTGRESQL", "Text": "TEXTFILE", "OCaml": "OCAML", "Julia": "JULIA", "JavaScript(Node.js)": "JAVASCRIPT_NODE", "Python": "PYTHON", "Pascal": "PASCAL", "Haskell": "HASKELL", "C++11": "CPP11", "Go": "GO", "Visual Basic": "VB", "PHP": "PHP", "MSSQL": "MSSQL", "Oracle Database": "ORACLE"};
+
+  var take_candidate_snapshot =  false ;
+
+  $(document).ready(function() {
+
+    G_SCRIPTS_LOADED = true;
+    
+
+    
+
+    // There is an issue with UV Iframe and Tab switch feature
+    UserVoiceIframeLoader();
+
+    
+
+    
+
+    $(document).ready(function() {
+        if (take_candidate_snapshot === true) {
+          $('#my-camera').on('webcam:live', renderBluebook);
+        } else {
+          renderBluebook();
+        }
+    });
+
+    
+
+    $(".question-item").on("click", function(event) {
+      $(this).find(".tool-tip").attr('title', $(this).find(".tool-tip").data("title"));
+    });
+  });
+
+  
+
+  var m_private_test_walkthrough = false;
+  
+    m_private_test_walkthrough = true;
+  
+
+  // This should lie before pace js is included
+  paceOptions = {
+    // Disable the 'elements' source
+    elements: false,
+    eventLag: false,
+    target: '.loading-progress',
+    elements: {
+      selectors: ['.all-problems']
+    },
+
+    // Only show the progress on regular and ajax-y page navigation,
+    // not every request
+    restartOnPushState: false,
+    restartOnRequestAfter: false
+  }
+
+  function loadHistory(){
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://hackerearth.global.ssl.fastly.net/static/base/history.js?v=0.1";
+    script.setAttribute('crossorigin','anonymous');
+    document.getElementsByTagName("body")[0].appendChild(script);
+    return false;
+  }
+
+  function checkRadioButtons(){
+    /*
+      Mark custom designed radio buttons selected.
+    */
+    var radio_buttons = $(".objective-option input[type='radio']:checked");
+    for(var i = 0;i < radio_buttons.length;i++){
+        $(radio_buttons[i]).siblings('.objective-virtual-radio').addClass('objective-selected');
+        $(radio_buttons[i]).parent().addClass('option-selected');
+    }
+  }
+</script>
+
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/flow_action.js.download" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/pace.js.download" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    var all_test_questions_url = '';
+    var submission_url_map = {};
+    
+    
+    
+    submission_url_map['b95de7f1daae47a9a7bb1b3bec3ed3eb'] = '/AJAX/file-submission-view/554/f/';
+    
+    
+    
+
+    // This has to be after the pace js is included in the file
+    Pace.on("done", function(){
+      // reorder the question serial number
+      reorderSerialNumberAndSetNextValue();
+      fixMarksWidth();
+      setPositionOfNext();
+      loadHistory();
+      checkRadioButtons();
+
+      $('.view-body-overlay').hide();
+    });
+</script>
+
+
+
+<script type="text/javascript">
+    
+    var CodeEditorConstants = {
+        fav_lang: null,
+        fav_lang_ajax_url: "/users/AJAX/set-favorite-lang/",
+        default_template_ajax_url: "/users/AJAX/set-favorite-code/",
+        LAB_FL: true,
+        LAB_FC: true
+    };
+
+    var CodeEditorText = {
+        submit : "SUBMIT",
+        compileSubmit : "Compile & Test",
+        compileSubmitForSQL : "Execute & Test",
+        provideCustomInput : "Provide custom input",
+        keybindingNormal : "Normal",
+        keybindingVim : "Vim",
+        keybindingEmacs : "Emacs",
+        writeOrUploadCode : "Enter your code or <a> <i className='fa fa-upload'></i> Upload your code</a> as file.",
+        overWriteExistingTemplate : "Your existing template will be over-written. Are you sure you want to update?",
+        updateDefaultTemplate : "Update default template",
+        takeMeBack: "Nope take me back",
+        yes: "Yes",
+        selectLanguage: "Language",
+        save : "Save",
+        loading: "Loading",
+        autoCompleteInfo: "Press Ctrl-space for autocomplete suggestions.",
+        poweredByCodeTable: "POWERED BY <span class='dark'>code<span>table</span></span>",
+        goFullScreen: "Go full screen",
+        exitFullScreen: "Exit full screen"
+    }
+</script>
+
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/vendors.js.download" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/brace-vendors.js.download" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/code-editor-autocomplete-all.js.download" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./Gieom Frontend Hiring_files/bluebook.js.download" crossorigin="anonymous"></script>
+
+<script src="./Gieom Frontend Hiring_files/controller.js.download" type="text/javascript" charset="utf-8" crossorigin="anonymous"></script>
+<script src="./Gieom Frontend Hiring_files/util.js.download" type="text/javascript" charset="utf-8" crossorigin="anonymous"></script>
+<script src="./Gieom Frontend Hiring_files/code_player_v2.js.download" type="text/javascript" charset="utf-8" crossorigin="anonymous"></script>
+
+
+
+
+    
+<div id="instructions-modal" class="modal-window very-large-modal" execute-on-show="closeDropDown">
+    <div class="modal-header">
+        Instructions
+    </div>
+    <div class="modal-content">
+        
+
+        <div class="content-heading">Test Instructions </div>
+        <div class="body-font standard-margin-bottom">
+            
+            
+            
+        </div>
+
+        <div class="content-heading standard-margin">General Guidelines</div>
+        <div class="body-font standard-margin-bottom">
+            <ul>
+                <li>
+                
+                    This test contains <span class="weight-700">1 File questions</span>.
+                
+                </li>
+
+                <li>
+                
+                    The duration of this test is<span class="weight-700"></span>. Your time will start when you see the questions. Once you start the test, you can not pause it.
+                
+                </li>
+
+                <li>Do not use any Online Development Environment, which exposes your code to the public. We take plagiarism seriously and do not entertain activities that are against the spirit of learning and programming. Violations can lead to account suspension or permanent blacklisting from HackerEarth.
+                </li>
+            </ul>
+        </div>
+
+    </div> <!-- /modal-content -->
+</div>
+
+  
+
+<div id="tiptip_holder" style="max-width:200px;"><div id="tiptip_arrow"><div id="tiptip_arrow_inner"></div></div><div id="tiptip_content"></div></div><div style="position:fixed; top:0; left:0; overflow:hidden;"><input style="position:absolute; left:-300px;" type="text" value="" id="focus_retriever" readonly="true"></div><div class="offline-ui offline-ui-up"><div class="offline-ui-content"></div><a href="https://www.hackerearth.com/challenge/hiring/gieom-frontend-hiring-challenge/problems/b95de7f1daae47a9a7bb1b3bec3ed3eb/" class="offline-ui-retry"></a></div><script type="text/javascript" src="./Gieom Frontend Hiring_files/history.js.download" crossorigin="anonymous"></script></body><div style="visibility: hidden; top: -9999px; position: absolute; opacity: 0;"></div><div style="visibility: hidden; top: -9999px; position: absolute; opacity: 0;"></div><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
